@@ -1,0 +1,29 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <EditTextPreference
+            android:defaultValue="1000000"
+            android:key="tagRangingPeriod"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Enter the desired Tag Ranging Period in microseconds" />
+        <EditTextPreference
+            android:defaultValue="32925"
+            android:key="antennaCalibration"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Enter the desired Antenna Calibration Value" />
+        <EditTextPreference
+            android:defaultValue="WIFI SSID"
+            android:key="ssid"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Enter the SSID of the WiFi Network" />
+        <EditTextPreference
+            android:defaultValue="WIFI PASSWORD"
+            android:key="wifiPassword"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Enter the password of the WiFi Network" />
+
+
+</PreferenceScreen>

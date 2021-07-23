@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/card_swipe_refresh_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/card_scroll_view_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <TextView
+                android:id="@+id/emptyView"
+                android:text="@string/no_displays_found"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+        </ScrollView>
+
+        <!-- A RecyclerView with some commonly used attributes -->
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/card_swipe_refresh_device"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/card_recycler_view_device"
+        android:name="javier.accesscontrolapp.fragment.DeviceFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        tools:context="fragment.DeviceFragment"
+        tools:listitem="@layout/fragment_display" />
+    <!--app:layoutManager="RecyclerView.LinearLayoutManager" -->
+
+    <!-- A RecyclerView with some commonly used attributes -->
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="bottom"
+android:orientation="vertical">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/display_new_fab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|end"
+    android:layout_margin="16dp"
+    android:src="@drawable/ic_add_black_24dp" />
+</LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
